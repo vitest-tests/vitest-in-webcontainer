@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [vitestWebcontainers()],
 
   test: {
+    include: ["test/*.test.ts"],
     exclude: ["test/fixtures"],
     testTimeout: 60_000,
 
